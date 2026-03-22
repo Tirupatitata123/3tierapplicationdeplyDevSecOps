@@ -55,7 +55,7 @@ pipeline {
             steps {
                 dir('backend') {
                     script {
-                        echo "🐳 Building and pushing Docker image..."
+                        echo "🐳 Building and pushing Docker image...."
                         
                         withDockerRegistry(credentialsId: 'docker') {
                             sh "docker build -t ${DOCKER_IMAGE} ."
