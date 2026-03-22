@@ -10,7 +10,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                echo "📦 Checking out source code..."
+                echo "📦 Checking out source code......"
                 git(
                     url: 'https://github.com/Ayushmansen500/devops-exam-app.git',             
                     branch: 'master'
